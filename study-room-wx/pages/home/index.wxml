@@ -1,0 +1,58 @@
+<view class="outermost-layer-tab">
+  <!-- 轮播图 -->
+  <view class="page-section swiper">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#ffffff"  indicator-active-color="#3a508a" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="page-section-spacing">
+      <block wx:for="{{backgroundSwiper}}" wx:key="*this">
+        <swiper-item>
+            <van-image width="100%" height="100%" src="{{ item }}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="reserve centered">
+    <view>自主预定</view>
+    <van-button type="primary" color="#3a508a" block bindtap="regionCheck">预定</van-button>
+  </view>
+
+ 
+
+  <view class="journalism centered">
+    <view class="pt-page-title">
+      <view>
+        场地介绍
+      </view>
+    </view>
+    <view class="introduce">
+        <view class="introduce_title" wx:for="{{journalismList}}" wx:key="*this">
+          <span class="sign"></span>
+          <span>{{ item.text }}</span>
+        </view>
+    </view>
+    <view class="pt-page-title">
+      <view>
+        注意事项
+      </view>
+    </view>
+    <view class="introduce">
+        <view class="introduce_title" wx:for="{{matter}}" wx:key="*this">
+          <span style="padding-bottom: 7rpx;">{{ item.text }}</span>
+        </view>
+    </view>
+    <view class="pt-page-title">
+      <view>
+        地址
+      </view>
+    </view>
+    <view class="introduce city">
+        <view class="introduce_title">
+          <span>安徽大学磬苑校区 文典阁</span>
+        </view>
+    </view>
+  </view>
+
+  <view class="centered" style="margin-top: 20rpx;">
+    
+  </view>
+    
+</view>

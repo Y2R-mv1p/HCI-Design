@@ -1,0 +1,99 @@
+@import "../../static/ali-icon/index.wxss";
+
+.login-background-text {
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.login-box {
+  width: 100%;
+}
+.outermost-layer {
+  padding: 0 50rpx 0 50rpx;
+}
+.user-login {
+  font-size: 60rpx;
+  font-weight: 600;
+  position: relative;
+}
+.before {
+  width: 120rpx;
+  height: 15rpx;
+  background: #3a508a88;
+  position: absolute;
+  bottom: 7rpx;
+  left: 0;
+}
+.login-explain {
+  font-size: 30rpx;
+  color: #bbbbbb;
+}
+
+/* 登录表单 */
+.login-from, .forget, .login-button {
+  /* width: 80%; */
+  margin: 0 auto;
+  position: relative;
+}
+.login-from-icon {
+  position: absolute;
+  color: #666666;
+}
+.icon-shoujizhanghao-xian {
+  top: 34rpx;
+  left: 33rpx;
+}
+.icon-mima {
+  bottom: 34rpx;
+  left: 33rpx;
+}
+.icon-yanzhengyanzhengma {
+  bottom: 34rpx;
+  left: 33rpx;
+}
+.van-field__body {
+  height: 60rpx;
+}
+.verification-button {
+  font-size: 25rpx;
+  color: white;
+  /* background: #3a508a; */
+}
+.verification-button::after {
+  border: 0 solid #bfbfbf;
+}
+
+/* 登录按钮 */
+.login-button {
+  padding-top: 70rpx;
+  width: 92%;
+  height: 260rpx;
+}
+.van-button--primary {
+  border-radius: 100rpx !important;
+}
+.registration {
+  text-align: center;
+  font-size: 30rpx;
+  padding-top: 20rpx;
+  height: 80rpx;
+  text-decoration:underline;
+  line-height: 80rpx;
+}
+.registration span:nth-child(2) {
+  color: #3a508a;
+}
+
+.other-login {
+  width: 73%;
+  margin: 0 auto;
+}
+.icon-weixin {
+  color: #24DB5A;
+  font-size: 60rpx;
+}
+.other-login view:nth-child(2) {
+  text-align: center;
+  margin-top: -20rpx;
+}

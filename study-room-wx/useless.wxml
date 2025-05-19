@@ -1,0 +1,13 @@
+/* 示例媒体查询 */
+@media screen and (max-width: 768px) {
+  /* 手机屏幕样式 */
+  .section {
+    padding-bottom: 100rpx;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 平板屏幕样式 */
+  .section {
+    padding-bottom: 200rpx;
+  }
+}
