@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图书馆座位监控系统</title>
+    <style>
+      body { margin: 0; padding: 20px; font-family: Arial; }
+      .camera-box { position: relative; width: 640px; }
+      canvas { position: absolute; left: 0; top: 0; }
+      .status-list { margin-top: 20px; }
+      .seat-item { padding: 10px; margin: 5px; border-radius: 5px; }
+      .empty { background: #cfc; } 
+      .occupied { background: #fcc; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
